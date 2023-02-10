@@ -1,0 +1,167 @@
+---
+title: " Metabarcoding"
+subtitle: "Thesis Defense"
+author: "Reed Clark Benkendorf"
+date: "March 3^rd^, '23"
+output: ioslides_presentation
+---
+
+<style>
+
+slide.backdrop {
+  background: black;
+}
+body {
+  background-color: black;
+}
+h2 { 
+text-align: right;
+ color: #4E2A84;		
+}
+h3 { 
+ color: #3399ff;		
+}
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## Overview
+
+1 | background  
+2 | questions  
+3 | approaches  
+4 | methods  
+5 | results  
+6 | future  
+7 | conclusions  
+
+
+## Team 
+
+-  Emily J. Woodworth (pollen morphology, and microscopy)
+-  Jane Ogilvie (ecological fieldwork)
+-  Sophie Taddeo (supervisory geospatial statistician)
+-  Paul CaraDonna (big picture(s,) bumble bees)
+-  Jeremie Fant (all things molecular and tied together)
+
+i.e. an in-house in production. 
+
+
+## the world is big - 1.1
+
+## ... *really really* big - 1.2
+
+## funding ? - 1.3
+
+## sample the planet - 1.4
+
+## from and back to functional forms - 1.5
+
+## plant species in ecology - 1.6
+
+## insects species in ecology - 1.7
+
+## from organisms to interactions - 1.8
+
+## pollen records - 1.9
+
+## metabarcoding - 1.10
+
+## old barcodes - 1.11
+
+## new barcodes? - 1.12
+
+## angiosperms 353  - 1.13
+
+## 2 - questions  
+
+## a353 as barcodes? - 2.1
+
+## serverless genomics? - 2.2 
+
+## time and species rich clades - 2.3
+
+## are a353 semi-quantitative? - 2.4
+
+## are floral visitation and pollen records congruent? - 2.5
+
+## 3 -  approaches  
+
+## Flora free data - 3.1
+
+## Flora free data; space - 3.1.1
+
+## Flora free data; time - 3.1.2
+
+## custom sequence databases - 3.2
+
+## identify pollen grains - 3.3
+
+## queen bee pollen loads - 3.4
+
+## 4 | methods  
+
+## plant species for distribution modelling - 4.1
+
+## species distribution modelling - 4.2
+
+## sdm evaluations - 4.3
+
+## coarse phenological modelling - 4.4
+
+## metabarcoding - 4.5
+
+## sequence database generation - 4.6
+
+## sequence assignment - 4.7
+
+## semi-quantitative evidence 4.8
+
+## 5 | results  
+
+## species distribution modelling - 4.2
+
+## sdm evaluations - 5.3
+
+## coarse phenological modelling - 5.4
+
+## metabarcoding - 5.5
+
+## sequence database generation - 5.6
+
+## sequence assignment - 5.7
+
+## semi-quantitative evidence - 5.8
+
+## 6 | future  
+
+## new data sets? | 6.1
+
+- artificial pollen loads
+- Gunnison Sage-Grouse scat
+
+## novel approaches | 6.2
+
+- searching for variable loci
+- flanking regions
+
+## 7 | conclusions  
+
+promising
+
+
+## acknowledgements
+
+two super fantastic technicians for the field seasons I worked during school, made my life SO easy
+
+- Dani Yashinowitz (Yellowstone National Park, botanist & crew lead, Whitebark Pine Surveys)
+- Hannah Lovell (Telluride Mountain Resort, and ISO work)
+
+
+## acknowledgments
+
+Sam Isham, Kelly McMillen, 
+
