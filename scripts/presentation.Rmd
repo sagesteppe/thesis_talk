@@ -1,9 +1,11 @@
 ---
-title: " Metabarcoding"
-subtitle: "Thesis Defense"
+title: ' Metabarcoding'
 author: "Reed Clark Benkendorf"
 date: "March 3^rd^, '23"
-output: ioslides_presentation
+output:
+  ioslides_presentation: default
+  slidy_presentation: default
+subtitle: Thesis Defense
 ---
 
 <style>
@@ -21,6 +23,7 @@ text-align: right;
 h3 { 
  color: #3399ff;		
 }
+
 </style>
 
 ```{r setup, include=FALSE}
@@ -31,11 +34,17 @@ knitr::opts_chunk$set(echo = FALSE)
 ## Overview
 
 1 | background  
+
 2 | questions  
+
 3 | approaches  
+
 4 | methods  
+
 5 | results  
+
 6 | future  
+
 7 | conclusions  
 
 
@@ -44,31 +53,61 @@ knitr::opts_chunk$set(echo = FALSE)
 -  Emily J. Woodworth (pollen morphology, and microscopy)
 -  Jane Ogilvie (ecological fieldwork)
 -  Sophie Taddeo (supervisory geospatial statistician)
--  Paul CaraDonna (big picture(s,) bumble bees)
+-  Paul CaraDonna (big picture(s,) and little bees)
 -  Jeremie Fant (all things molecular and tied together)
 
-i.e. an in-house in production. 
-
+*i.e.* an in-house production. 
 
 ## the world is big - 1.1
 
 ## ... *really really* big - 1.2
 
-## funding ? - 1.3
+## funding opportunties - 1.3
+
+*haha made you look*
 
 ## sample the planet - 1.4
+
+<div class="columns-2">
+  - Bullet 1
+  - Bullet 2
+  - Bullet 3
+  
+  ![Primary Roads](../graphics/pictures/major_roads.resized.jpg)
+</div>
+
 
 ## from and back to functional forms - 1.5
 
 ## plant species in ecology - 1.6
 
+<div class="columns-2">
+  - Bullet 1
+  - Bullet 2
+  - Bullet 3
+  
+  ![*Cirsium scariosum*](../graphics/pictures/Cirsium_scariosum.resized.jpg)
+</div>
+
+
+
 ## insects species in ecology - 1.7
 
 ## from organisms to interactions - 1.8
 
+<div class="columns-2">
+  - Bullet 1
+  - Bullet 2
+  - Bullet 3
+  
+  ![*Solidago spathulata* & *Megachile wheeleri*, by A. Litz](../graphics/pictures/Megachile_Solidago.resized.jpg)
+</div>
+
+
+
 ## pollen records - 1.9
 
-## metabarcoding - 1.10
+## metabarcoding - 1.10 
 
 ## old barcodes - 1.11
 
@@ -88,9 +127,17 @@ i.e. an in-house in production.
 
 ## are floral visitation and pollen records congruent? - 2.5
 
-## 3 -  approaches  
+## 3 -  approaches 
 
 ## Flora free data - 3.1
+
+<div class="columns-2">
+  - Bullet 1
+  - Bullet 2
+  - Bullet 3
+  
+  ![FPNW 2^nd^](../graphics/pictures/fpnw2.resized.jpg)
+</div>
 
 ## Flora free data; space - 3.1.1
 
@@ -102,56 +149,168 @@ i.e. an in-house in production.
 
 ## queen bee pollen loads - 3.4
 
-## 4 | methods  
+## 4 - methods  
 
-## plant species for distribution modelling - 4.1
+<div class="columns-2">
+  ![](../graphics/plots/flowchart.resized.png)
+  
+  - <div class = "yellow"> field work  </div>
+  - <div class = "orange1"> spatial  </div>
+  - temporal  
+  - morphologic  
+  - laboratory  
+  - bioinformatic  
+  - post-classification  
+</div>
 
-## species distribution modelling - 4.2
 
-## sdm evaluations - 4.3
+## study system & field work - 4.1
 
-## coarse phenological modelling - 4.4
+PICTURE OF RMBL 
+
+## pollen morphological identification 4.2
+
+<div class="columns-2">
+  - Bullet 1
+  - Bullet 2
+  - Bullet 3
+  
+  ![workflow](../graphics/assorted/mircoscopy_workflow.resized.png)
+</div>
+
+## pollen reference library 4.2.1
+
+PICTURE OF POLLEN SLIDES FORM EMILY PRESENTATION
+
+## pollen corbiculae loads 4.2.2
+
+<div class="columns-2">
+
+  - Bullet 1
+  - Bullet 2
+  - Bullet 3
+  
+  ![Corbiculae Sample](../graphics/pictures/corbiculae_slide.resized.jpg)
+</div>
+
+## molecular barcoding 4.3
+
+## spatial analysis 4.3.1
+
+## plant species for distribution modelling 4.3.1.1.
+
+LINEAR REGRESSION IMAGE
+
+## species distribution modelling - 4.3.1.2
+
+FULL STACK PICTURE
+
+## sdm evaluations - 4.3.1.2
+
+LINEAR REGRESSION
+
+## temporal modelling - 4.3.2
+
+
+## temporal modelling subset - 4.3.2.1
+
+SPATIAL SUBSET PICTURE
+
+## temporal modelling distributions - 4.3.2.2
+
+WEIBULL PICTURE ?
+
+##  barcode references library - 4.4
+
+## genomics work - 4.4.1
+
+<div class="columns-2">
+  - Bullet 1
+  - Bullet 2
+  - Bullet 3
+  
+  ![workflow](../graphics/assorted/molecular_metagenomic_workflow.resized.png)
+</div>
+
+## plant genomic reference dna - 4.4.2
+
+<div class="columns-2">
+  - Bullet 1
+  - Bullet 2
+  - Bullet 3
+  
+  ![Leaf Tissue from RMH](../graphics/pictures/bernie_nelson.resized.jpg)
+</div>
+
+## pollen genomics dna - 4.4.3
+
+<div class="columns-2">
+  - Bullet 1
+  - Bullet 2
+  - Bullet 3
+  
+  ![hyb-seq](../graphics/pictures/hyb-seq.resized.jpg)
+</div>
+
+## barcoding informatics - 4.4.4
+
+IMAGE OF COMPUTER BUILDING
 
 ## metabarcoding - 4.5
 
-## sequence database generation - 4.6
 
-## sequence assignment - 4.7
+## sequence database generation - 4.5.1
 
-## semi-quantitative evidence 4.8
+
+## sequence assignment - 4.5.2
+
+
+## semi-quantitative evidence 4.5.3
+
+
 
 ## 5 | results  
 
 ## species distribution modelling - 4.2
 
+OVERALL TABLE 
+
 ## sdm evaluations - 5.3
 
+COMPARISION BY PLOT
+
 ## coarse phenological modelling - 5.4
+
+REGRESSION COMPARISIONS
 
 ## metabarcoding - 5.5
 
 ## sequence database generation - 5.6
 
+
+
 ## sequence assignment - 5.7
 
 ## semi-quantitative evidence - 5.8
 
-## 6 | future  
 
-## new data sets? | 6.1
+## 6 | Discussion
+
+## 7 | future  
+
+## new data sets? | 7.1
 
 - artificial pollen loads
 - Gunnison Sage-Grouse scat
 
-## novel approaches | 6.2
+## novel approaches | 7.2
 
 - searching for variable loci
 - flanking regions
 
-## 7 | conclusions  
+## 8 | conclusions  
 
 promising
-
 
 ## acknowledgements
 
