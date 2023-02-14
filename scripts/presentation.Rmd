@@ -28,7 +28,14 @@ h3 {
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(message  = FALSE)
+knitr::opts_chunk$set(warning = FALSE)
 ```
+
+```{r}
+library(tidyverse)
+```
+
 
 
 ## Overview
@@ -82,9 +89,9 @@ knitr::opts_chunk$set(echo = FALSE)
 ## plant species in ecology - 1.6
 
 <div class="columns-2">
-  - Bullet 1
-  - Bullet 2
-  - Bullet 3
+  - mis-identification is *very* common
+  - mis-identification can lead to nebulous understandings
+  - mis-identification can lead to mis-management
   
   ![*Cirsium scariosum*](../graphics/pictures/Cirsium_scariosum.resized.jpg)
 </div>
@@ -141,9 +148,14 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Flora free data; space - 3.1.1
 
+
+
 ## Flora free data; time - 3.1.2
 
+
+
 ## custom sequence databases - 3.2
+
 
 ## identify pollen grains - 3.3
 
@@ -171,9 +183,10 @@ PICTURE OF RMBL
 ## pollen morphological identification 4.2
 
 <div class="columns-2">
-  - Bullet 1
-  - Bullet 2
-  - Bullet 3
+  - Develop grain reference library
+  - Score traits
+  - write keys
+  - Emily Woodworth talk at ['Not Another Specimen'](https://2021.botanyconference.org/engine/search/index.php?func=detail&aid=924) ASPT @ Botany 2021
   
   ![workflow](../graphics/assorted/mircoscopy_workflow.resized.png)
 </div>
@@ -203,11 +216,19 @@ LINEAR REGRESSION IMAGE
 
 ## species distribution modelling - 4.3.1.2
 
-FULL STACK PICTURE
+<div class="columns-2">
+  - gather records from aggregator websites - BIEN
+  - prune records and model
+  - GLM & GAM, RF & boosting 
+  - ensemble individual models
+  - [talk for analytical toolkit (PBC 470)](https://github.com/sagesteppe/Analytical_Toolkit_SDM)
+  
+  ![a single species](../graphics/plots/besseya_predicted.resized.png)
+</div>
 
 ## sdm evaluations - 4.3.1.2
 
-LINEAR REGRESSION
+- in pipeline, True skill statistics
 
 ## temporal modelling - 4.3.2
 
@@ -261,6 +282,12 @@ IMAGE OF COMPUTER BUILDING
 
 ## sequence database generation - 4.5.1
 
+<div class="columns-2">
+  - Kew Tree of Life ~ ### taxa
+  - US ~ xx TAXA
+  
+  ![database]()
+</div>
 
 ## sequence assignment - 4.5.2
 
@@ -271,17 +298,60 @@ IMAGE OF COMPUTER BUILDING
 
 ## 5 | results  
 
-## species distribution modelling - 4.2
+## field work
 
-OVERALL TABLE 
+<div class="columns-2">
+  - observations of Queen Bumble bees!
+  - of plant unqiue plant species involved
+  - corbiculae loads
+  
+  ![corbiculae](../graphics/plots/siteMaps.png){height=92%, width=92%}
+</div>
+
+## species distribution modelling - 5.2
+
+```{r}
+dat <- read.csv('../data/evaluation_table.csv')[,2:3]
+data.frame(Metric  = dat[1:5,1],
+                   Value   = dat[1:5,2],
+                   Metric1 = dat[6:10,1],
+                   Value1  = dat[6:10,2]
+                   ) %>% 
+  knitr::kable(caption = "Logistic regression assessing accuracy of SDMs",
+    col.names = c('Metric', 'Value', 'Metric', 'Value'),
+    booktabs = T)
+```
+
+
+he 554 vascular plants with biotic pollination syndromes, the 493 ML ensembles accurately predicted the presence of 362 (65.3%), incorrectly predicted the presence of 64 (11.6%), incorrectly predicted 34 true presences (6.1%) as being absent, and correctly predicted the true absence of 33 (6.0%). 
+
+The balanced accuracy of the ensembled models is 0.627 (Sensitivity = 0.340, Specificity 0.914). Of the 554 vascular plants with biotic pollination syndromes, the 475 LM ensembles accurately predicted the presence of 286 (51.6%), incorrectly predicted the presence of 41 (14.3%), incorrectly predicted 93 true presences (16.8%) as being absent, and correctly predicted the true absence of 55 (9.9%). The balanced accuracy of the ensembled models is 0.664 (Sensitivity = 0.573, Specificity 0.754). Of the 554 vascular plants with biotic pollination syndromes in the flora 13 (2.3%) were in the Orchid family and 41 (7.4%) are non-natives, both of which are restricted from the database, and can only reduce the number of true predicted presences by roughly 10%. 
+
 
 ## sdm evaluations - 5.3
 
-COMPARISION BY PLOT
+
+|           |     ml     |    lm      |
+|:---------:|:----------:|:----------:|
+| ensembles |      493   |      473   |
+|   true +  |      362   |      286   | 
+|   true -  |       33   |       55   |
+|  false +  |       64   |       41   |
+|  false -  |       34   |       93   |
+
+- Plot Level, 117 species total (109 eligible for modelling...)
+  - ML: 105 (89.7% (96.3%))  
+  - LM: 102 (87.2% (93.5%))
 
 ## coarse phenological modelling - 5.4
 
-REGRESSION COMPARISIONS
+<div class="columns-2">
+  - strong agreement between first and peak flower periods
+  - good agreement between last flower date 
+  - *no* agreement with duration! - species do not 'line up'
+  
+  ![flower dates](../graphics/plots/phenology_estimates_10_90.png){height=92%, width=92%}
+</div>
 
 ## metabarcoding - 5.5
 
@@ -314,13 +384,16 @@ promising
 
 ## acknowledgements
 
-two super fantastic technicians for the field seasons I worked during school, made my life SO easy
+two super fantastic technicians for the field seasons I worked during school, made my life SO easy   
+find them funding and recruit them, and then give me a finders fee.    
 
-- Dani Yashinowitz (Yellowstone National Park, botanist & crew lead, Whitebark Pine Surveys)
-- Hannah Lovell (Telluride Mountain Resort, and ISO work)
-
+- Dani Yashinowitz B.S. (Yellowstone National Park, botanist & crew lead, Whitebark Pine Surveys (!!!))
+- Hannah Lovell B.S. (Telluride Mountain Resort, and ISO work)
 
 ## acknowledgments
 
-Sam Isham, Kelly McMillen, 
+Employment: Yingying Xie, Josh Scholll, Sam Isham, Kelly McMillen, Kay Hajek, Linda Vance, Cassandra Owen, Ken Holsinger
+
+Project: Nyree Zerega, Pat Herendeen, Hilary Noble, Zoe Diaz-Martinez, Angela McDonnell, Elena Loke, Ian Breckheimer, Ben Legler, Ernie Nelson, Charles (Rick) Williams, D. Knoke, L. Brummer, J. Boyd, C. Davidson, I. Gilman, M. Kirkpatrick, S. McCauley, J. Smith, K. Taylor, & C. Williams. David Giblin, Mare Nazaire, Sarah Burnett, Lauren Price, T.C.H. Cole, Eliot Gardner. 
+
 
