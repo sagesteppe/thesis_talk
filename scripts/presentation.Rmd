@@ -40,47 +40,53 @@ library(tidyverse)
 
 ## Overview
 
-1 | background  
+<font color="black"> 1 </font> | background  
 
-2 | questions  
+<font color="black"> 2 </font> | questions  
 
-3 | approaches  
+<font color="black"> 3 </font> | approaches  
 
-4 | methods  
+<font color="black"> 4 </font> | methods  
 
-5 | results  
+<font color="black"> 5 </font> | results  
 
-6 | future  
+<font color="black"> 6 </font> | future  
 
-7 | conclusions  
+<font color="black"> 7 </font> | conclusions  
 
 
-## Team 
+## Team {.flexbox .vcenter}
 
--  Emily J. Woodworth (pollen morphology, and microscopy)
--  Jane Ogilvie (ecological fieldwork)
--  Sophie Taddeo (supervisory geospatial statistician)
--  Paul CaraDonna (big picture(s,) and little bees)
--  Jeremie Fant (all things molecular and tied together)
+<font color="black"> Jane Ogilvie </font> *(ecological fieldwork, design)*  
+
+<font color="black"> Emily J. Woodworth </font> *(pollen morphology, and microscopy)*  
+
+<font color="black"> Sophie Taddeo </font>  *(geo-spatial, statistics)*  
+
+<font color="black"> Paul CaraDonna </font> *(little bees/big picture(s))*  
+
+<font color="black"> Jeremie Fant </font> *(all things molecular and tied together)*  
 
 *i.e.* an in-house production. 
 
 ## the world is big - 1.1
 
+
+
 ## ... *really really* big - 1.2
 
 ## funding opportunties - 1.3
 
-*haha made you look*
+![](../graphics/pictures/Nelson.jpg)
 
 ## sample the planet - 1.4
 
 <div class="columns-2">
-  - Bullet 1
+  - 
   - Bullet 2
   - Bullet 3
   
-  ![Primary Roads](../graphics/pictures/major_roads.resized.jpg)
+  ![<font size="4">Primary Roads</font>](../graphics/pictures/major_roads.resized.jpg)
 </div>
 
 
@@ -93,28 +99,36 @@ library(tidyverse)
   - mis-identification can lead to nebulous understandings
   - mis-identification can lead to mis-management
   
-  ![*Cirsium scariosum*](../graphics/pictures/Cirsium_scariosum.resized.jpg)
+  ![<font size="4">*Cirsium scariosum*</font>](../graphics/pictures/Cirsium_scariosum.resized.jpg)
 </div>
-
 
 
 ## insects species in ecology - 1.7
 
+- Macro Invertebrates   
+  - stream ecology bio indicators  
+    - mayflies, caddisflies, stoneflies  
+- Coleoptera  
+  - soil contamination by metals
+
 ## from organisms to interactions - 1.8
 
 <div class="columns-2">
-  - Bullet 1
+  - 
   - Bullet 2
   - Bullet 3
   
-  ![*Solidago spathulata* & *Megachile wheeleri*, by A. Litz](../graphics/pictures/Megachile_Solidago.resized.jpg)
+  ![<font size="4">*Solidago spathulata* & *Megachile wheeleri*, by A. Litz</font>](../graphics/pictures/Megachile_Solidago.resized.jpg){height=87%, width=87%}
 </div>
-
 
 
 ## pollen records - 1.9
 
 ## metabarcoding - 1.10 
+
+- Barcoding  
+  - molecular identification of tissue from a single organism
+-
 
 ## old barcodes - 1.11
 
@@ -126,36 +140,66 @@ library(tidyverse)
 
 ## a353 as barcodes? - 2.1
 
+<div class="columns-2">
+  - 'universal' markers for phylogenomics
+  - usable in all flowering plant clades 
+  - first comprehensive genus level phylogeny of flowering plants 
+
+![](../graphics/pictures/Angiosperms353.jpg){height=95%, width=95%}
+
+</div>
+
 ## serverless genomics? - 2.2 
+
 
 ## time and species rich clades - 2.3
 
-## are a353 semi-quantitative? - 2.4
+<div class="rows-2">
+  - diverse clades provide challenges for identification
+  - species often diverged in ecological traits
+  - flowering time provides a filter for pollination studies 
+
+<center>
+![<font size="4">*Rhododendron* Hengduan Mtns., by Qin Li</font>](../graphics/pictures/Rhododendron_QinLi.jpg){height=75%, width=75%}
+</center>
+</div>
+
+## are a353 semi-quantitative? - 2.4 {.flexbox .vcenter}
+
+
+- identification *good*
+
+- interactions *great*
+
+- quantify importance of interactions *awesome*
 
 ## are floral visitation and pollen records congruent? - 2.5
 
-## 3 -  approaches 
+## 3 - approaches 
 
 ## Flora free data - 3.1
 
 <div class="columns-2">
-  - Bullet 1
-  - Bullet 2
-  - Bullet 3
+  - no longer any funding
+  - very few hobbyists
+  - how do we monitor ecological shifts under climate change?
+    - geographic ranges
+    - flowering time
+    
+    <br>
+  - __*back to the sheets!*__
   
-  ![FPNW 2^nd^](../graphics/pictures/fpnw2.resized.jpg)
+  ![<font size="4">FPNW 2^nd^</font>](../graphics/pictures/fpnw2.resized.jpg){height=83%}
 </div>
 
-## Flora free data; space - 3.1.1
 
 
+## custom sequence databases - 3.2 {.flexbox .vcenter}
 
-## Flora free data; time - 3.1.2
-
-
-
-## custom sequence databases - 3.2
-
+- reduce number of species present in database
+  - reduce computational requirements
+  - increase likelihood of relevant matches across loci
+  - reduce false positives for semi-quantitative inference
 
 ## identify pollen grains - 3.3
 
@@ -178,7 +222,7 @@ library(tidyverse)
 
 ## study system & field work - 4.1
 
-PICTURE OF RMBL 
+![](../graphics/plots/siteMaps.png){height=95%, width=95%}
 
 ## pollen morphological identification 4.2
 
@@ -188,7 +232,7 @@ PICTURE OF RMBL
   - write keys
   - Emily Woodworth talk at ['Not Another Specimen'](https://2021.botanyconference.org/engine/search/index.php?func=detail&aid=924) ASPT @ Botany 2021
   
-  ![workflow](../graphics/assorted/mircoscopy_workflow.resized.png)
+  ![<font size="4">workflow</font>](../graphics/assorted/mircoscopy_workflow.resized.png){height=93%, width=93%}
 </div>
 
 ## pollen reference library 4.2.1
@@ -199,11 +243,14 @@ PICTURE OF POLLEN SLIDES FORM EMILY PRESENTATION
 
 <div class="columns-2">
 
-  - Bullet 1
-  - Bullet 2
-  - Bullet 3
+  - aliquot from same sample used for molecular  
+  - stained by fuchsin jelly with stirring
+  - transects  
+  - rarefaction curves 
+    - richness  
+    - abundance   
   
-  ![Corbiculae Sample](../graphics/pictures/corbiculae_slide.resized.jpg)
+  ![<font size="4">Corbiculae Sample</font>](../graphics/pictures/corbiculae_slide.resized.jpg)
 </div>
 
 ## molecular barcoding 4.3
@@ -212,7 +259,24 @@ PICTURE OF POLLEN SLIDES FORM EMILY PRESENTATION
 
 ## plant species for distribution modelling 4.3.1.1.
 
-LINEAR REGRESSION IMAGE
+
+<div class="columns-2">
+
+  - develop a candidate species list for barcoding  
+  - download all herbarium records from a distance exceeding the study area
+  - compare to known species at field site
+  - logistic regression
+  - bootstrapped samples of records
+  
+  - SEARCH DIST MAP
+
+</div>
+
+<div class="notes">
+
+
+
+</div>
 
 ## species distribution modelling - 4.3.1.2
 
@@ -223,7 +287,7 @@ LINEAR REGRESSION IMAGE
   - ensemble individual models
   - [talk for analytical toolkit (PBC 470)](https://github.com/sagesteppe/Analytical_Toolkit_SDM)
   
-  ![a single species](../graphics/plots/besseya_predicted.resized.png)
+  ![<font size="4">a single species</font>](../graphics/plots/besseya_predicted.resized.png)
 </div>
 
 ## sdm evaluations - 4.3.1.2
@@ -232,6 +296,10 @@ LINEAR REGRESSION IMAGE
 
 ## temporal modelling - 4.3.2
 
+- reduce herbarium records to study domain
+- thin records to analogous ecoregions
+- trim start/end records
+- identify major phenological cues, subset records to similar areas
 
 ## temporal modelling subset - 4.3.2.1
 
@@ -246,32 +314,45 @@ WEIBULL PICTURE ?
 ## genomics work - 4.4.1
 
 <div class="columns-2">
-  - Bullet 1
-  - Bullet 2
-  - Bullet 3
+  - Plant Reference Library  
+    - herbarium & silica dried  
+    - CTAB, some DNEasy 
+  - Pollen Extraction  
+    - 'novel' CTAB / SDS extraction
+  - Both
+    - clean up Cytiza, size selection SPRI  
+    - enzymatic fragmentation  
   
-  ![workflow](../graphics/assorted/molecular_metagenomic_workflow.resized.png)
+  ![](../graphics/assorted/molecular_metagenomic_workflow.resized.png)
 </div>
 
 ## plant genomic reference dna - 4.4.2
 
-<div class="columns-2">
-  - Bullet 1
-  - Bullet 2
-  - Bullet 3
+<div class="rows-2">
+  - 38 species to sequencing
+  - 13 species duplicate
+  - 24 silica gel dried, 14 herbarium leaf tissue (RM, ID, IDS)
   
-  ![Leaf Tissue from RMH](../graphics/pictures/bernie_nelson.resized.jpg)
+  <center>
+  ![<font size="4">tissue from Rocky Mountain Herbarium</font>](../graphics/pictures/Bernie_Tissue.jpg){height=65%, width=65%}
+  </center>
+
 </div>
 
 ## pollen genomics dna - 4.4.3
 
-<div class="columns-2">
-  - Bullet 1
-  - Bullet 2
-  - Bullet 3
+<div class="columns-2">  
+  - 54 Initial samples for extraction  
+  - 44 samples underwent all steps  
   
-  ![hyb-seq](../graphics/pictures/hyb-seq.resized.jpg)
+  ![<font size="4">hyb-seq</font>](../graphics/pictures/hyb-seq.resized.jpg)
 </div>
+
+<div class="notes">
+
+
+</div>
+
 
 ## barcoding informatics - 4.4.4
 
@@ -295,20 +376,23 @@ IMAGE OF COMPUTER BUILDING
 ## semi-quantitative evidence 4.5.3
 
 
-
 ## 5 | results  
 
 ## field work
 
 <div class="columns-2">
-  - observations of Queen Bumble bees!
-  - of plant unqiue plant species involved
-  - corbiculae loads
+  - 723 floral visitation observations (!)
+  - 36 unique plant species involved
+  - 64 corbiculae loads from Queens
   
-  ![corbiculae](../graphics/plots/siteMaps.png){height=92%, width=92%}
 </div>
 
-## species distribution modelling - 5.2
+<div class="notes">
+
+
+</div>
+
+## sdm evaluations - computational - 5.2
 
 ```{r}
 dat <- read.csv('../data/evaluation_table.csv')[,2:3]
@@ -317,66 +401,289 @@ data.frame(Metric  = dat[1:5,1],
                    Metric1 = dat[6:10,1],
                    Value1  = dat[6:10,2]
                    ) %>% 
-  knitr::kable(caption = "Logistic regression assessing accuracy of SDMs",
+  knitr::kable(caption = "Logistic regression assessing accuracy of SDMs; witheld data",
     col.names = c('Metric', 'Value', 'Metric', 'Value'),
     booktabs = T)
 ```
 
 
-he 554 vascular plants with biotic pollination syndromes, the 493 ML ensembles accurately predicted the presence of 362 (65.3%), incorrectly predicted the presence of 64 (11.6%), incorrectly predicted 34 true presences (6.1%) as being absent, and correctly predicted the true absence of 33 (6.0%). 
+<div class="notes">
 
-The balanced accuracy of the ensembled models is 0.627 (Sensitivity = 0.340, Specificity 0.914). Of the 554 vascular plants with biotic pollination syndromes, the 475 LM ensembles accurately predicted the presence of 286 (51.6%), incorrectly predicted the presence of 41 (14.3%), incorrectly predicted 93 true presences (16.8%) as being absent, and correctly predicted the true absence of 55 (9.9%). The balanced accuracy of the ensembled models is 0.664 (Sensitivity = 0.573, Specificity 0.754). Of the 554 vascular plants with biotic pollination syndromes in the flora 13 (2.3%) were in the Orchid family and 41 (7.4%) are non-natives, both of which are restricted from the database, and can only reduce the number of true predicted presences by roughly 10%. 
+Species distribution models are hypothesis which require testing. The values in these tables arise from the practice of taking 70% of occurrence records and using them for training, and using the remaining 30% of records for testing. All of these results arise from testing an equal number of presences and absences from the final ensembled models. From the results you can see that we focused on REMOVING more species from the pools generated via logistic regression and distance searches (TRUE NEGATIVE RATE), than we did on identifying presences. Overall results were very good, and were generally highly comparable to model performances achieved by persons focusing on modelling individual species. 
+
+</div>
+
+## sdm evaluations - 5.3.1
+
+<div class="columns-2">
+
+  - able to compare to a localized vascular plant checklist
+    - not everything w/ vouchers...  
+    - not everything w/ vouchers...  
+  -  able to remove nearly all species from the upper (alpine) & lower (sagesteppe) life zones
 
 
-## sdm evaluations - 5.3
+  |           |     ml     |    lm      |
+  |:---------:|:----------:|:----------:|
+  | ensembles |      493   |      473   |
+  |   true +  |      362   |      286   | 
+  |   true -  |       33   |       55   |
+  |  false +  |       64   |       41   |
+  |  false -  |       34   |       93   |
 
+</div>
 
-|           |     ml     |    lm      |
-|:---------:|:----------:|:----------:|
-| ensembles |      493   |      473   |
-|   true +  |      362   |      286   | 
-|   true -  |       33   |       55   |
-|  false +  |       64   |       41   |
-|  false -  |       34   |       93   |
+<div class="notes">
 
+So we were able to make somewhat of a comparison to a vascular plant checklist for the field site as a whole. The checklist is of, a distinct quality in regards to those endeavors, and no records contain noted vouchered accessions, no effort was made to assure the identity of any determinations in the herbarium, and many species records are anecdotal. 
+
+Further we did intentionally want to remove a great many of the records from this list, which contained for example many alpine species. So it is not a great reference, but we see that by combining the focal search from location with SD modelling we were able to identify the presence of many taxa. 
+
+</div>
+
+## sdm evaluations - 5.3.2
+
+- We were interested in comparison to the Valleys. 
 - Plot Level, 117 species total (109 eligible for modelling...)
   - ML: 105 (89.7% (96.3%))  
   - LM: 102 (87.2% (93.5%))
+- Able to detect virtually all species recorded on plot
+  
+<div class="notes">
 
-## coarse phenological modelling - 5.4
+Finally, we could compare our models in a very tangible and direct way. We compared them to the plot level data from the plots. While these data were not comprehensive, and hence could not be used to evaluate absences, nor full floristic composition - we were able to predict the presence of nearly every single species encountered on each plot. The only taxa which we missed, which were not 'restricted' from the initial database we used to access occurrence records, were missed simply due to taxonomic inconsistences. 
+
+As the goal of the sdm's were to predict a relevant candidate list of species which are present in an area for developement of the database. I believe these are very successful results. 
+
+</div>
+
+## coarse phenological modelling - 5.4.1
 
 <div class="columns-2">
-  - strong agreement between first and peak flower periods
+  - strong agreement between first and peak flower periods with historic data
   - good agreement between last flower date 
   - *no* agreement with duration! - species do not 'line up'
   
-  ![flower dates](../graphics/plots/phenology_estimates_10_90.png){height=92%, width=92%}
+  ![<font size="4">flower dates</font>](../graphics/plots/phenology_estimates_10_90.png){height=92%, width=92%}
+</div>
+
+<div class="notes">
+
+The computational data aligned well with what has been observed on the ground over long term periods for two calculations. There was very good agreement between first and peak flower date, and good agreement with last flower date. We were unable to emulate the observations of duration. This indicates that we may not have the best data for each individual species, but perhaps rather them as an amalgamation. 
+
+</div>
+
+## coarse phenological modelling - 5.4.2
+
+<div class="rows-2">
+  - similar results with weekly data across *all* field sites combined
+  - tau values lower than over longer term data
+  
+  ![<font size="4">flower dates</font>](../graphics/plots/phenology_estimates-jeo_10_90.png){height=92%, width=92%}
+</div>
+
+<div class="notes">
+
+Results were pretty much the same between the field collected data and computationally derived data. We were not able to calculate peak flower date due to methodological differences. We did not calculate duration as we knew this method does not perform well in that capacity. 
+
 </div>
 
 ## metabarcoding - 5.5
 
 ## sequence database generation - 5.6
 
+<div class="columns-2">
+  - found existing data for 130 species on NCBI - SRA
+  - novel sequence data for 25 species, varying number of loci
+  - whole 'ring' to be completed within the year
+
+  ![<font size="4">Species in Sequence DB</font>](../graphics/plots/rmbl_draft_tree.png){height=90%, width=90%}
+
+</div>
+
+<div class="notes">
+
+We were not able to establish a database with nearly as much data as we hoped to. Kew was meant to have released the full 14k species worth of data already, but then COVID. Nonetheless, we had pretty good coverage for our purposes. We were able to establish a database of 155 species. We expect around the time this work is pubished, KEW will have released the remainder of these data. 
+
+</div>
+
+## sequence assignment - 5.7 - I
+
+<div class="columns-2">
+
+  - trimmomatic (discard short reads)  
+  - Kraken (many false positives)
+  - Bracken  (many many false positives)
+  - Blast  (least false positives)
+  
+  - both very fast alignment algorithms, worked well as filters to reduce the workload for BLAST
+    - BLAST operates at roughly 1/1000 speed
+    - more accurate algorithm
+
+  ![<font size="4">Three Initial Networks</font>](../graphics/plots/Molecular_nets.png){height=90%, width=90%}
+</div>
+
+<div class="notes">
+
+We utilized trimmomatic to trim unique identifiers which are attached to all samples for metagenomic sequencing, which have been shown to give false positives, and to remove short reads when we were at it. Essentially Kraken requires reads at least 30 base pairs long and these were removed at this stage. We initially planned on using a single algorithm for classifying our sequence reads. Kraken, kraken is a very fast sequence alignment algorithm which has enormous popularity in the microbiome world, and the application of metagenomics there. 
+
+Subsequent to Kraken, which will classify reads to the lowest unambiguous taxon which it can, i.e. it can return matches for 'Rosaceae'. Bracken 'Bayesian Reestimation of Abundance with KrakEN', is an extension of kraken which seeks to classify all reads from higher to a terminal taxon. It also is supposedly quite good at estimating abundances of reads in samples. We found that while Bracken would place all results, we were very skeptical of them. 
+
+Accordingly, we decided to give BLAST, the golden standard of sequence alignments a go. We aligned all sequences which were used by Kraken, so essentially kraken became an intermediate filter, to BLAST. we were considerably happier with the results from Blast being closer to what field data told us. 
+
+</div>
+
+## sequence assignment - 5.7 - II
+
+```{r}
+pp_seqs_t <- read.csv( file.path('../data', 'Sequence_Reclass_table.csv') ) %>% 
+  mutate(across(where(is.numeric), ~ round(.x, 1)))
+
+sum(pp_seqs_t$Prcnt_Records)
+
+knitr::kable(pp_seqs_t, align = "c", 
+             col.names = c('Condition', 'No. Class.', 'Prcnt. Class.', 'Total Seqs', 'Rank'),
+             caption = "Post classification of Sequences via Taxonomy and Ecology,\ntop 15 most abundant reads") %>% 
+  kableExtra::kable_styling(
+      latex_options = "striped",
+      stripe_color = "gray!10")
+```
 
 
-## sequence assignment - 5.7
+<div class="columns-2">
+
+<div class="notes">
+
+The number of taxa matched in any one corbiculae loads were capped at the top 15 identifications. Using the automated sequence reclassification schema, roughly 55% of taxonomic records, and 50% of all BLAST classified sequences were moved to a species believed present and flowering at the field station on the date the sample was collected. Roughly 42% of all taxonomic records, and 49% of all blast classified sequences were to be blunt probably wrong, and could only be placed to the level of genus. 
+
+</div>
+
+## sequence assingment - 5.7 - III
+
+<div class="columns-2">
+
+  - conceptually similar to the automated process
+  - utilized high resolution occurrence and phenology data
+  - utilized morphological and molecular data
+  - no linear operation or rule of precedence
+  - classified all sequences to species
+
+</div>
+
+<div class="columns-2">
+
+<div class="notes">
+
+OK so, via automatic processes, and with coarser resolution we were missing a species identification for 50% of our reads. But when we have finer scale data, we can actually also classify those reads, and reconsider the reads previously classified via the other processes. 
+
+What is very exciting about this, is this is basically the best insight that we can get from a experts at a field station, and we can readily compare it to the best insights which we could hope to glean from wider expanses of land. 
+
+</div>
 
 ## semi-quantitative evidence - 5.8
 
 
+<div class="columns-2">
+  - ...
+  - *some* relationship exists
+  - requires further work
+  
+  ![<font size="4">Counted grains</note>](../graphics/plots/CorrelationCountedSequences.png){height=92%, width=92%}
+</div>
+
+<div class="notes">
+
+Alright we did use these data in the last step. SO some relationship exists here, which seems as promising or honestly more promising than exists for the older barcodes. We did not have much to investigate this, but it warrants investigations. 
+
+</div>
+
+## final floral feeding structure - 5.9
+
+
+
 ## 6 | Discussion
+
+## conservation implications - 6.1 - I
+
+- a hidden plain text paragraph in the discussion.
+- collaboration with Ken Holsinger, Jedd Sondergard @ BLM Montrose
+
+ <font size="2"> 
+ 
+> "  Some foraging preferences of *Bombus*, both at this field site and across a great many localities globally emerge from this work, which reiterates the needs for land managers to maintain relatively high amounts of members of the Fabaceae, Boraginaceae, and Ranunculaceae, in Western North American montane landscapes (@goulson2005causes, @goulson2010bumblebees, @liang2021evolutionary, @bontvsutvsnaja2021bumble). Numerous historic, and some ongoing, land management practices reduce the ability of many landscapes to support stable populations of *Bombus*. Historic livestock grazing was often associated with the targeted removal of many species of plants which are known to have compounds toxic to cattle. In particular, the removal of locoweeds (Fabaceae: *Astragalus* L. & *Oxytropis* DC.) and larkspurs (Ranunculaceae: *Delphinium*) were common across public lands administered by the United States Forest Service (@ralphs1988herbicide, @aldous1919eradicating, @ralphs2003mechanism). Further actions, generally initiated by early settlers, involved the channelization and incising of streams, culling of beavers, and leaving cattle concentrated on higher order stream banks for significant periods of time, all processes which lower the water tables and reduced the extent of stream-associated [riverine] wetlands and the mesic meadows fringes which provide habitat for many species of tall *Mertensia* (Boraginaceae, e.g. *M. ciliata* Torr. G. Don.) widely distributed across Western North America, and to an extent *Delphinium barbeyi*  and many species of native *Trifolium* L. (@dahl1990wetlands, @naiman1988alteration, @belsky1999survey, @cooke1976arroyos). Fire suppression further resulted in the succession of many Aspen (*Populus tremuloides* Michx.) groves to Conifer stands, decreasing the mosaic of age structured habitats in many landscapes, adversely effects habitat for tall *Mertensia* species and several species of *Delphinium* (@brewen202176, @keane2002cascading). Finally the effects of Nitrogen deposition, especially given the West's rapidly growing population still pose adverse effects on the abundance of a variety of species of Fabaceae at Urban-Rural interfaces (see @stevens2018atmospheric, @fenn2003ecological). Current solutions to these issues, involve targeted burns, reintroduction of beavers and beaver habitat analogs, and the possibility of re-seeding a variety of 'locoweeds' and 'larkspurs' in areas now seldom used, or only used for early, grazing. The highly enthusiastic response of land managers, and homeowners, to plant *Ascelpias* L., using genetically appropriate materials, to improve Monarch Butterfly (*Danaus plexippus* L.) habitat provides an effective framework for the latter (@oberhauser2015monarchs, @basey2015producing). "
+
+</font> 
+
+<div class="notes">
+
+I work for the Bureau of Land Management Field office immediately adjacent to this field station. And i have been writing a lot of reports, and I decided to sneak in a paragraph that I would be able to cite in multiple contexts, and which would be readily interpretable to land management professionals. So I am working with my boss and his co-worked to refine and formulate a paragraph like this based on how to fix these. 
+
+</div>
+
+
+## conservation implications - 6.1 - II
+
+<div class="columns-2">
+
+- historic vegetation treatment removals  
+  - *Delphinium*, *Astragalus* & *Oxytropis*  
+- altered fire cycle  
+  - *Delphinium*, *Mertensia*  
+- stream channelization / wetland removal  
+  - *Mertensia*  
+  
+  
+- seed species, where missing
+- allow return of historic fire cycle, when appropriate
+- reintroduce beavers, or if unavailable than analogs  
+
+</div>
 
 ## 7 | future  
 
-## new data sets? | 7.1
+## metabarcoding; computational approaches - 7.2
 
-- artificial pollen loads
+<div class="columns-2">
+
+- qualitative:
+  - search for variable loci
+  - flanking regions and pop gen
+  <br>
+  <br>
+  
+- quantitative:
+  - read re-assignment based on phylogentic distance
+  - read re-assignment in bayesian framework
+
+</div>
+
+<div class="notes">
+
+it seems that future uses of t
+
+</div>
+
+  
+## metabarcoding;  new data sets? - 7.1
+
+- (more) West Slope
+- artificial mixtures  
+  - leaf tissue  (counted cells)
+    - easier to collect
+  - pollen loads  (counted grains)
+    - more popular
 - Gunnison Sage-Grouse scat
+  - BLM habitat assessment data
+  - opportunistic collections
 
-## novel approaches | 7.2
+## bombus; trends in perennial bunchgrasses - 7.3
 
-- searching for variable loci
-- flanking regions
+- notable declines in bunch grasses over the last 40 years
+- especially pronounced in montane areas
+- model conversion of meadows/Aspen stands to conifer forest
+- use existing data to model reductions in grass cover
+- view historic grazing renewals to monitor (loosely) reduction in grass diversity
+- forked from Ken Holsinger
 
 ## 8 | conclusions  
 
@@ -388,11 +695,11 @@ two super fantastic technicians for the field seasons I worked during school, ma
 find them funding and recruit them, and then give me a finders fee.    
 
 - Dani Yashinowitz B.S. (Yellowstone National Park, botanist & crew lead, Whitebark Pine Surveys (!!!))
-- Hannah Lovell B.S. (Telluride Mountain Resort, and ISO work)
+- Hannah Lovell B.S. (Telluride Mountain Resort, and in search of work)
 
 ## acknowledgments
 
-Employment: Yingying Xie, Josh Scholll, Sam Isham, Kelly McMillen, Kay Hajek, Linda Vance, Cassandra Owen, Ken Holsinger
+Employment: Yingying Xie, Josh Scholl, Sam Isham, Kelly McMillen, Kay Hajek, Linda Vance, Cassandra Owen, Ken Holsinger
 
 Project: Nyree Zerega, Pat Herendeen, Hilary Noble, Zoe Diaz-Martinez, Angela McDonnell, Elena Loke, Ian Breckheimer, Ben Legler, Ernie Nelson, Charles (Rick) Williams, D. Knoke, L. Brummer, J. Boyd, C. Davidson, I. Gilman, M. Kirkpatrick, S. McCauley, J. Smith, K. Taylor, & C. Williams. David Giblin, Mare Nazaire, Sarah Burnett, Lauren Price, T.C.H. Cole, Eliot Gardner. 
 
