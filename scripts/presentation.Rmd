@@ -126,13 +126,38 @@ library(tidyverse)
 
 ## metabarcoding - 1.10 
 
-- Barcoding  
-  - molecular identification of tissue from a single organism
--
+<div class="columns-2">
+  - Barcoding  
+    - molecular identification of tissue from a single organism
+  - Metabarcoding
+    - molecular identification of organisms present in a mixed substrate
+  
+  ![<font size="4">Five Astragali</font>](../graphics/pictures/Five_Astragali.jpg){height=90%, width=90%}
+</div>
 
-## old barcodes - 1.11
+<div class="notes">
 
-## new barcodes? - 1.12
+Quick definition check, so barcoding is simply the identification of tissue from one organism, e.g. we could try and identify the species of Astragalus from this day of collecting via barcoding; assuming they were present in a database. 'Meta' just means we have a pooled sample to deal with, these are generally samples of soil, pollen, or water. So if we wanted to identify the assembly of organisms which are present on the rhizosphere of a species of Astragalus, we would use metabarcoding. 
+
+</div>
+
+## barcodes - 1.11
+
+- Kingdom: Animal, 
+  - COI (**C**ytochrome c **O**x**I**dase)
+  - *holding it's own in Fungi*
+- Kingdoms: Fungi + Plant 
+  - ITS (**I**nteral **T**ranscribed **S**pacer)
+  - *holding it's own in Fungi*
+- Kingdom: Plant
+  - ITS, rbcL, matK, trnH-psbA
+  - *__not__ holding much of anything*
+
+## new barcodes for plants? - 1.12
+
+- genomic
+  - low cost
+- how to reference backbone system
 
 ## angiosperms 353  - 1.13
 
@@ -193,7 +218,6 @@ library(tidyverse)
 </div>
 
 
-
 ## custom sequence databases - 3.2 {.flexbox .vcenter}
 
 - reduce number of species present in database
@@ -237,7 +261,15 @@ library(tidyverse)
 
 ## pollen reference library 4.2.1
 
-PICTURE OF POLLEN SLIDES FORM EMILY PRESENTATION
+<div class="columns-2">
+  - ca. 110 species
+  - 60 novels species added
+  - shared
+  - *many more species to add to key!! (60 +, mostly un- sampled families)*
+  
+  ![](../graphics/pictures/pollen_montage.png){height=75%, width=75%}
+</div>
+
 
 ## pollen corbiculae loads 4.2.2
 
@@ -250,14 +282,20 @@ PICTURE OF POLLEN SLIDES FORM EMILY PRESENTATION
     - richness  
     - abundance   
   
-  ![<font size="4">Corbiculae Sample</font>](../graphics/pictures/corbiculae_slide.resized.jpg)
+  <center>
+  ![<font size="4">Corbiculae Sample</font>](../graphics/pictures/corbiculae_slide.resized.jpg){height=45%, width=45%}
+  </center>
 </div>
 
 ## molecular barcoding 4.3
 
+
+
 ## spatial analysis 4.3.1
 
-## plant species for distribution modelling 4.3.1.1.
+
+
+## plant species, distribution modelling 4.3.1.1.
 
 
 <div class="columns-2">
@@ -268,7 +306,7 @@ PICTURE OF POLLEN SLIDES FORM EMILY PRESENTATION
   - logistic regression
   - bootstrapped samples of records
   
-  - SEARCH DIST MAP
+  ![](../graphics/plots/distance_queried.png){height=105%, width=105%}
 
 </div>
 
@@ -390,6 +428,19 @@ IMAGE OF COMPUTER BUILDING
 <div class="notes">
 
 
+</div>
+
+
+## sdm candidate species ????
+
+<div class="columns-2">
+  - downloaded some 112k records
+  - mostly trees from forestry surveys
+  - bootstrap re-sampled to reduce effects of collection 'hotspots'
+  - non-present taxa begin nearly immediately...
+  - real occurrences taper off quickly
+  
+  ![database](../graphics/plots/Occurrence_distance.png){height=90%, width=90%}
 </div>
 
 ## sdm evaluations - computational - 5.2
