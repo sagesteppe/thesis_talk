@@ -1,40 +1,34 @@
 ---
-title: 'Metagenomic Barcoding'
-author: Reed Clark Benkendorf<br>Northwestern University & The Chicago Botanic Garden<br>Southwest Conservation Corps & Bureau of the Land Management
+title: "Metagenomic Barcoding"
+author: Reed Clark Benkendorf<br>Northwestern University & The Chicago Botanic Garden<br>Southwest
+  Conservation Corps & Bureau of the Land Management
 date: "March 1^st^, '23"
 output:
   ioslides_presentation:
-    widescreen: yes
     logo: ../graphics/assorted/cbg_logo.jpg
+  beamer_presentation: default
   slidy_presentation: default
-subtitle: of Pollen Loads Offers Insights on<br>the Foraging Patterns of Queen Bumble Bees
+subtitle: of Pollen Loads Offers Insights on<br>the Foraging Patterns of Queen Bumble
+  Bees
 ---
-
-<script>
-slides > slide.title-slide {
-    background-image: url('../graphics/pictures/collecting.jpg');
-    background-size: 100% 100%;
-}
-</script>
-
 
 <style>
 
 slide.backdrop {
   background: black;
 }
-body {
-  background-color: black;
-}
+
 h2 { 
 text-align: right;
  color: #4E2A84;		
 }
+
 h3 { 
  color: #3399ff;		
 }
 
 </style>
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
@@ -106,6 +100,7 @@ library(tidyverse)
 ## funding opportunties - 1.3
 
 ![](../graphics/pictures/Nelson.jpg)
+
 ## how do we sample the planet? - 1.4
 
 
@@ -132,7 +127,7 @@ library(tidyverse)
 <center>
   
   ![<font size="4">*Macroinvertebrates.org*</font>](../graphics/assorted/ephemeroptera.resized.png){height=50%, width=50%}
-  
+
 </center>
 
 ## from organisms to interactions - 1.8
@@ -142,7 +137,7 @@ library(tidyverse)
   - Bullet 2
   - Bullet 3
   
-  ![<font size="4">*Solidago spathulata* & *Megachile wheeleri*, by A. Litz</font>](../graphics/pictures/Megachile_Solidago.resized.jpg){height=87%, width=87%}
+  ![<font size="4">*Solidago spathulata* & *Megachile wheeleri*, by A. Litz</font>](../graphics/pictures/Megachile_Solidago.resized.jpg){height=15%, width=15%}
 </div>
 
 
@@ -154,7 +149,7 @@ library(tidyverse)
   - Metabarcoding
     - molecular identification of organisms present in a mixed substrate
   
-  ![<font size="4">Five Astragali</font>](../graphics/pictures/Five_Astragali.jpg){height=90%, width=90%}
+  ![<font size="4">Five Astragali</font>](../graphics/pictures/Five_Astragali.jpg){height=75%, width=75%}
 </div>
 
 <div class="notes">
@@ -187,8 +182,8 @@ Quick definition check, so barcoding is simply the identification of tissue from
     - Kew PAFTOL
   - angiosperms 353
   
-  ![Norm](../graphics/pictures/norm-wickett.jpg){height=55%, width=55%}
-  ![Matt](../graphics/pictures/matt-johnson.jpg){height=45%, width=45%}
+  ![Norm](../graphics/pictures/norm-wickett.jpg){height=50%, width=50%}
+  ![Matt](../graphics/pictures/matt-johnson.jpg){height=40%, width=40%}
 </div>
 
 ## 2 - questions  
@@ -208,7 +203,7 @@ Quick definition check, so barcoding is simply the identification of tissue from
   - species often diverged in ecological traits
 
 <center>
-![<font size="4">*Rhododendron* sp. Hengduan Mtns., by Qin Li</font>](../graphics/pictures/Rhododendron_QinLi.jpg){height=50%, width=50%}
+![<font size="4">*Rhododendron* sp. Hengduan Mtns., by Qin Li</font>](../graphics/pictures/Rhododendron_QinLi.jpg){height=45%, width=45%}
 </center>
 </div>
 
@@ -220,7 +215,7 @@ Quick definition check, so barcoding is simply the identification of tissue from
   - first comprehensive genus level phylogeny of flowering plants 
   - shoot the moon; meta genomics first
 
-![](../graphics/pictures/Angiosperms353.jpg){height=95%, width=95%}
+![](../graphics/pictures/Angiosperms353.jpg){height=75%, width=75%}
 </div>
 
 ## are a353 semi-quantitative? - 2.3 {.flexbox .vcenter}
@@ -240,7 +235,9 @@ Do the number of sequence reads reflect the amount of biological material in a s
     - flowering time
   - __*back to the sheets!*__
   
-  ![<font size="4">FPNW 2^nd^</font>](../graphics/pictures/fpnw2.resized.jpg){height=83%}
+  <center>
+  ![<font size="4">FPNW 2^nd^</font>](../graphics/pictures/fpnw2.resized.jpg){height=80%}
+  </center>
 </div>
 
 ## custom sequence databases; *a353 as barcodes?* - 3.2 {.flexbox .vcenter}
@@ -253,11 +250,13 @@ Do the number of sequence reads reflect the amount of biological material in a s
 ## queen bee pollen loads: *a353 as barcodes?* - 3.3
 
 <div class="columns-2">
-- DNA extracted from corbiculae loads
-  - a 'pollen basket' for holding grains collected grains
-- variable in size, but generally many tens of thousands of grains
+  - DNA extracted from corbiculae loads
+    - a 'pollen basket' for holding grains collected grains
+  - variable in size, but generally many tens of thousands of grains
 
+  <center>
   ![USFWS](../graphics/pictures/Corbiculae-FWS.jpeg)
+  </center>
 </div>
 
 ## identify pollen grains; *a353 semi-quantitative?* - 3.4
@@ -269,8 +268,8 @@ Do the number of sequence reads reflect the amount of biological material in a s
 <div class="columns-2">
   ![](../graphics/plots/flowchart.resized.png)
   
-  - <div class = "yellow"> field work  </div>
-  - <div class = "orange1"> spatial  </div>
+  - field work
+  - spatial
   - temporal  
   - morphologic  
   - laboratory  
@@ -281,7 +280,7 @@ Do the number of sequence reads reflect the amount of biological material in a s
 
 ## study system & field work - 4.1
 
-![](../graphics/plots/siteMaps.png){height=95%, width=95%}
+![](../graphics/plots/siteMaps.png){height=60%, width=60%}
 
 ## pollen morphological identification 4.2
 
@@ -291,7 +290,7 @@ Do the number of sequence reads reflect the amount of biological material in a s
   - write keys
   - Emily Woodworth talk at ['Not Another Specimen'](https://2021.botanyconference.org/engine/search/index.php?func=detail&aid=924) ASPT @ Botany 2021
   
-  ![<font size="4">workflow</font>](../graphics/assorted/mircoscopy_workflow.resized.png){height=93%, width=93%}
+  ![<font size="4">workflow</font>](../graphics/assorted/mircoscopy_workflow.resized.png){height=55%, width=55%}
 </div>
 
 ## pollen reference library 4.2.1
@@ -299,10 +298,12 @@ Do the number of sequence reads reflect the amount of biological material in a s
 <div class="columns-2">
   - ca. 110 species
   - 60 novels species added
+  - ca. 1/3 of species with duplicate preparations
   - shared
   - *many more species to add to key!! (60 +, mostly un- sampled families)*
   
-  ![](../graphics/pictures/pollen_montage.png){height=75%, width=75%}
+  
+  ![](../graphics/pictures/pollen_montage.png){height=65%, width=65%}
 </div>
 
 ## pollen corbiculae loads 4.2.2
@@ -317,7 +318,7 @@ Do the number of sequence reads reflect the amount of biological material in a s
     - abundance   
   
   <center>
-  ![<font size="4">Corbiculae Sample</font>](../graphics/pictures/corbiculae_slide.resized.jpg){height=45%, width=45%}
+  ![<font size="4">Corbiculae Sample</font>](../graphics/pictures/corbiculae_slide.resized.jpg){height=30%, width=30%}
   </center>
 </div>
 
@@ -380,7 +381,7 @@ SPATIAL SUBSET PICTURE
 
 ## temporal modelling distributions - 4.3.2.2
 
-
+<center>
 ```{r}
 curve(dweibull(x, shape = 2, scale = 1), from=0, to=4, ylab = 'Density',
       main = 'Weibull distribution', col = '#ff006e', lwd = 2)
@@ -392,7 +393,7 @@ legend(2, .8, legend=c("shape = 2.0 & scale = 1",
        col=c("#ff006e", "#2a9d8f", '#f4a261'),
        lty=1, cex=1.2, lwd = 2)
 ```
-
+</center>
 ##  barcode references library - 4.4
 
 ## genomics work - 4.4.1
@@ -407,7 +408,7 @@ legend(2, .8, legend=c("shape = 2.0 & scale = 1",
     - clean up Cytiza, size selection SPRI  
     - enzymatic fragmentation  
   
-  ![](../graphics/assorted/molecular_metagenomic_workflow.resized.png)
+  ![](../graphics/assorted/molecular_metagenomic_workflow.resized.png){height=50%, width=50%}
 </div>
 
 ## plant genomic reference dna - 4.4.2
@@ -418,7 +419,7 @@ legend(2, .8, legend=c("shape = 2.0 & scale = 1",
   - 24 silica gel dried, 14 herbarium leaf tissue (RM, ID, IDS)
   
   <center>
-  ![<font size="4">tissue from Rocky Mountain Herbarium</font>](../graphics/pictures/Bernie_Tissue.jpg){height=65%, width=65%}
+  ![<font size="4">tissue from Rocky Mountain Herbarium</font>](../graphics/pictures/Bernie_Tissue.jpg){height=50%, width=50%}
   </center>
 
 </div>
@@ -458,16 +459,15 @@ legend(2, .8, legend=c("shape = 2.0 & scale = 1",
   - Kew Tree of Life ~ ### taxa
   - US ~ xx TAXA
   
-  ![database]()
 </div>
 
 ## sequence assignment - 4.5.2
 
-
+stuff
 
 ## semi-quantitative evidence 4.5.3
 
-
+stuff
 
 ## 5 | results  
 
@@ -520,23 +520,15 @@ Species distribution models are hypothesis which require testing. The values in 
 
 ## sdm evaluations - 5.3.1
 
-<div class="columns-2">
 
-  - able to compare to a localized vascular plant checklist
-    - not everything w/ vouchers...  
-    - not everything w/ vouchers...  
-  -  able to remove nearly all species from the upper (alpine) & lower (sagesteppe) life zones
-
-
-  |           |     ml     |    lm      |
-  |:---------:|:----------:|:----------:|
-  | ensembles |      493   |      473   |
-  |   true +  |      362   |      286   | 
-  |   true -  |       33   |       55   |
-  |  false +  |       64   |       41   |
-  |  false -  |       34   |       93   |
-
-</div>
+|           |     ml     |    lm      |
+|:---------:|:----------:|:----------:|
+| ensembles |      493   |      473   |
+|   true +  |      362   |      286   | 
+|   true -  |       33   |       55   |
+|  false +  |       64   |       41   |
+|  false -  |       34   |       93   |
+  
 
 <div class="notes">
 
@@ -580,12 +572,18 @@ The computational data aligned well with what has been observed on the ground ov
 
 ## coarse phenological modelling - 5.4.2
 
+<center>
 <div class="rows-2">
   - similar results with weekly data across *all* field sites combined
   - tau values lower than over longer term data
+  <br>
+  <br>
+  <br>
+  <br>
   
-  ![<font size="4">flower dates</font>](../graphics/plots/phenology_estimates-jeo_10_90.png){height=92%, width=92%}
+  ![<font size="4">flower dates</font>](../graphics/plots/phenology_estimates-jeo_10_90.png){height=50%, width=50%}
 </div>
+</center>
 
 <div class="notes">
 
@@ -709,9 +707,11 @@ Alright we did use these data in the last step. SO some relationship exists here
 
 ## final floral feeding structure - 5.9
 
+less stuff
 
+##  Discussion - 6
 
-## 6 | Discussion
+stuff 
 
 ## conservation implications - 6.1
 
