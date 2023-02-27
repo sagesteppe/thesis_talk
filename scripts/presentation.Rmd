@@ -1,12 +1,22 @@
 ---
-title: ' Metabarcoding'
-author: "Reed Clark Benkendorf"
-date: "March 3^rd^, '23"
+title: 'Metagenomic Barcoding'
+author: Reed Clark Benkendorf<br>Northwestern University & The Chicago Botanic Garden<br>Southwest Conservation Corps & Bureau of the Land Management
+date: "March 1^st^, '23"
 output:
-  ioslides_presentation: default
+  ioslides_presentation:
+    widescreen: yes
+    logo: ../graphics/assorted/cbg_logo.jpg
   slidy_presentation: default
-subtitle: Thesis Defense
+subtitle: of Pollen Loads Offers Insights on<br>the Foraging Patterns of Queen Bumble Bees
 ---
+
+<script>
+slides > slide.title-slide {
+    background-image: url('../graphics/pictures/collecting.jpg');
+    background-size: 100% 100%;
+}
+</script>
+
 
 <style>
 
@@ -39,19 +49,27 @@ library(tidyverse)
 
 ## Overview
 
-<font color="black"> 1 </font> | background  
+<div class="columns-2">
 
-<font color="black"> 2 </font> | questions  
+  <font color="black"> 1 </font> | background  
 
-<font color="black"> 3 </font> | approaches  
+  <font color="black"> 2 </font> | questions  
 
-<font color="black"> 4 </font> | methods  
+  <font color="black"> 3 </font> | approaches  
 
-<font color="black"> 5 </font> | results  
+  <font color="black"> 4 </font> | methods  
 
-<font color="black"> 6 </font> | future  
+  <font color="black"> 5 </font> | results  
 
-<font color="black"> 7 </font> | conclusions  
+  <font color="black"> 6 </font> | future  
+
+  <font color="black"> 7 </font> | conclusions  
+  
+  <center> 
+  ![<font size="4"> *Cercocarpus* </font>](../graphics/pictures/Cercocarpus-Steens.resized.jpg)
+  </center>
+  
+</div>
 
 ## Team {.flexbox .vcenter}
 
@@ -88,6 +106,9 @@ library(tidyverse)
 ## funding opportunties - 1.3
 
 ![](../graphics/pictures/Nelson.jpg)
+## how do we sample the planet? - 1.4
+
+
 
 ## plant species in ecology - 1.6
 
@@ -105,7 +126,14 @@ library(tidyverse)
   - stream ecology bio indicators  
     - mayflies, caddisflies, stoneflies  
 - Coleoptera  
-  - soil contamination by metals
+  - soil contamination by metal
+- *from bio-indicators to foci?*
+  
+<center>
+  
+  ![<font size="4">*Macroinvertebrates.org*</font>](../graphics/assorted/ephemeroptera.resized.png){height=50%, width=50%}
+  
+</center>
 
 ## from organisms to interactions - 1.8
 
@@ -193,12 +221,11 @@ Quick definition check, so barcoding is simply the identification of tissue from
   - shoot the moon; meta genomics first
 
 ![](../graphics/pictures/Angiosperms353.jpg){height=95%, width=95%}
-
 </div>
 
 ## are a353 semi-quantitative? - 2.3 {.flexbox .vcenter}
 
-- Do the number of sequence reads reflect the amount of biological material in a sample?
+Do the number of sequence reads reflect the amount of biological material in a sample?
 
 ## 3 - approaches 
 
@@ -235,7 +262,7 @@ Quick definition check, so barcoding is simply the identification of tissue from
 
 ## identify pollen grains; *a353 semi-quantitative?* - 3.4
 
-- can we
+- 
 
 ## 4 - methods  
 
@@ -294,13 +321,15 @@ Quick definition check, so barcoding is simply the identification of tissue from
   </center>
 </div>
 
-## molecular barcoding 4.3
+## molecular barcoding 4.3 {.flexbox .vcenter}
 
+- Angiosperms 353...
 
+## spatial analysis 4.3.1 {.flexbox .vcenter}
 
-## spatial analysis 4.3.1
-
-
+- 2-stage approach  
+  - 1^st^: distance search of records from museums & plot based data (e.g. Forest Servce)
+  - 2^nd^: species distribution modelling
 
 ## plant species, distribution modelling 4.3.1.1.
 
@@ -317,7 +346,6 @@ Quick definition check, so barcoding is simply the identification of tissue from
 </div>
 
 <div class="notes">
-
 
 
 </div>
@@ -337,6 +365,7 @@ Quick definition check, so barcoding is simply the identification of tissue from
 ## sdm evaluations - 4.3.1.2
 
 - in pipeline, True skill statistics
+  - works well over wide range of occurrence records
 
 ## temporal modelling - 4.3.2
 
@@ -351,7 +380,18 @@ SPATIAL SUBSET PICTURE
 
 ## temporal modelling distributions - 4.3.2.2
 
-WEIBULL PICTURE ?
+
+```{r}
+curve(dweibull(x, shape = 2, scale = 1), from=0, to=4, ylab = 'Density',
+      main = 'Weibull distribution', col = '#ff006e', lwd = 2)
+curve(dweibull(x, shape = 1.6, scale = 1),  lwd = 2,  from = 0, to = 4, col = '#2a9d8f', add = T)
+curve(dweibull(x, shape = 1.8, scale = 1),  lwd = 2, from = 0, to = 4, col = '#f4a261', add = T)
+legend(2, .8, legend=c("shape = 2.0 & scale = 1", 
+                       "shape = 1.6 & scale = 1", 
+                       "shape = 1.8 & scale = 1"),
+       col=c("#ff006e", "#2a9d8f", '#f4a261'),
+       lty=1, cex=1.2, lwd = 2)
+```
 
 ##  barcode references library - 4.4
 
@@ -387,7 +427,7 @@ WEIBULL PICTURE ?
 
 <div class="columns-2">  
   - 54 Initial samples for extraction  
-  - 44 samples underwent all steps  
+  - 44 samples underwent all steps and were analyses
   
   ![<font size="4">hyb-seq</font>](../graphics/pictures/hyb-seq.resized.jpg)
 </div>
@@ -407,7 +447,6 @@ WEIBULL PICTURE ?
   - BLAST followup
   
   
-  
 </div>
 
 ## metabarcoding - 4.5
@@ -425,7 +464,9 @@ WEIBULL PICTURE ?
 ## sequence assignment - 4.5.2
 
 
+
 ## semi-quantitative evidence 4.5.3
+
 
 
 ## 5 | results  
@@ -574,17 +615,12 @@ We were not able to establish a database with nearly as much data as we hoped to
 ## sequence assignment - 5.7 - I
 
 <div class="columns-2">
-
   - trimmomatic (discard short reads)  
   - Kraken (many false positives)
-  - Bracken  (many many false positives)
-  - Blast  (least false positives)
-  
-  - both very fast alignment algorithms, worked well as filters to reduce the workload for BLAST
-    - BLAST operates at roughly 1/1000 speed
-    - more accurate algorithm
+  - Bracken  (many *many* false positives)
+  - Blast  (fewest false positives)
 
-  ![<font size="4">Three Initial Networks</font>](../graphics/plots/Molecular_nets.png){height=90%, width=90%}
+  ![<font size="4">Three Initial Networks</font>](../graphics/plots/Molecular_nets.jpg){height=93%, width=93%}
 </div>
 
 <div class="notes">
@@ -602,8 +638,6 @@ Accordingly, we decided to give BLAST, the golden standard of sequence alignment
 ```{r}
 pp_seqs_t <- read.csv( file.path('../data', 'Sequence_Reclass_table.csv') ) %>% 
   mutate(across(where(is.numeric), ~ round(.x, 1)))
-
-sum(pp_seqs_t$Prcnt_Records)
 
 knitr::kable(pp_seqs_t, align = "c", 
              col.names = c('Condition', 'No. Class.', 'Prcnt. Class.', 'Total Seqs', 'Rank'),
@@ -623,6 +657,18 @@ The number of taxa matched in any one corbiculae loads were capped at the top 15
 </div>
 
 ## sequence assingment - 5.7 - III
+
+<div class="columns-2">
+
+  - Naive BLAST from custom databases 26% accuracy
+  - post-classified BLAST using temporal filters to create genera monogeneric in space and time 44%
+  - BLAST, creates *many* false positives
+  
+  ![](../graphics/plots/Accuracy_BLAST.png){height=95%, width=95%}
+
+</div>
+
+## sequence assingment - 5.7 - IV
 
 <div class="columns-2">
 
@@ -650,7 +696,7 @@ What is very exciting about this, is this is basically the best insight that we 
 <div class="columns-2">
   - ...
   - *some* relationship exists
-  - requires further work
+  - requires further work by someone else
   
   ![<font size="4">Counted grains</note>](../graphics/plots/CorrelationCountedSequences.png){height=92%, width=92%}
 </div>
@@ -667,16 +713,10 @@ Alright we did use these data in the last step. SO some relationship exists here
 
 ## 6 | Discussion
 
-## conservation implications - 6.1 - I
+## conservation implications - 6.1
 
 - a hidden plain text paragraph in the discussion.
 - collaboration with Ken Holsinger, Jedd Sondergard @ BLM Montrose
-
- <font size="2"> 
- 
-> "  Some foraging preferences of *Bombus*, both at this field site and across a great many localities globally emerge from this work, which reiterates the needs for land managers to maintain relatively high amounts of members of the Fabaceae, Boraginaceae, and Ranunculaceae, in Western North American montane landscapes (@goulson2005causes, @goulson2010bumblebees, @liang2021evolutionary, @bontvsutvsnaja2021bumble). Numerous historic, and some ongoing, land management practices reduce the ability of many landscapes to support stable populations of *Bombus*. Historic livestock grazing was often associated with the targeted removal of many species of plants which are known to have compounds toxic to cattle. In particular, the removal of locoweeds (Fabaceae: *Astragalus* L. & *Oxytropis* DC.) and larkspurs (Ranunculaceae: *Delphinium*) were common across public lands administered by the United States Forest Service (@ralphs1988herbicide, @aldous1919eradicating, @ralphs2003mechanism). Further actions, generally initiated by early settlers, involved the channelization and incising of streams, culling of beavers, and leaving cattle concentrated on higher order stream banks for significant periods of time, all processes which lower the water tables and reduced the extent of stream-associated [riverine] wetlands and the mesic meadows fringes which provide habitat for many species of tall *Mertensia* (Boraginaceae, e.g. *M. ciliata* Torr. G. Don.) widely distributed across Western North America, and to an extent *Delphinium barbeyi*  and many species of native *Trifolium* L. (@dahl1990wetlands, @naiman1988alteration, @belsky1999survey, @cooke1976arroyos). Fire suppression further resulted in the succession of many Aspen (*Populus tremuloides* Michx.) groves to Conifer stands, decreasing the mosaic of age structured habitats in many landscapes, adversely effects habitat for tall *Mertensia* species and several species of *Delphinium* (@brewen202176, @keane2002cascading). Finally the effects of Nitrogen deposition, especially given the West's rapidly growing population still pose adverse effects on the abundance of a variety of species of Fabaceae at Urban-Rural interfaces (see @stevens2018atmospheric, @fenn2003ecological). Current solutions to these issues, involve targeted burns, reintroduction of beavers and beaver habitat analogs, and the possibility of re-seeding a variety of 'locoweeds' and 'larkspurs' in areas now seldom used, or only used for early, grazing. The highly enthusiastic response of land managers, and homeowners, to plant *Ascelpias* L., using genetically appropriate materials, to improve Monarch Butterfly (*Danaus plexippus* L.) habitat provides an effective framework for the latter (@oberhauser2015monarchs, @basey2015producing). "
-
-</font> 
 
 <div class="notes">
 
