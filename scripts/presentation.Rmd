@@ -215,7 +215,7 @@ Quick definition check, so barcoding is simply the identification of tissue from
   - first comprehensive genus level phylogeny of flowering plants 
   - shoot the moon; meta genomics first
 
-![](../graphics/pictures/Angiosperms353.jpg){height=75%, width=75%}
+  ![](../graphics/pictures/Angiosperms353.jpg){height=85%, width=85%}
 </div>
 
 ## are a353 semi-quantitative? - 2.3 {.flexbox .vcenter}
@@ -236,7 +236,7 @@ Do the number of sequence reads reflect the amount of biological material in a s
   - __*back to the sheets!*__
   
   <center>
-  ![<font size="4">FPNW 2^nd^</font>](../graphics/pictures/fpnw2.resized.jpg){height=80%}
+  ![<font size="4">FPNW 2^nd^</font>](../graphics/pictures/fpnw2.resized.jpg){height=40%}
   </center>
 </div>
 
@@ -290,7 +290,7 @@ Do the number of sequence reads reflect the amount of biological material in a s
   - write keys
   - Emily Woodworth talk at ['Not Another Specimen'](https://2021.botanyconference.org/engine/search/index.php?func=detail&aid=924) ASPT @ Botany 2021
   
-  ![<font size="4">workflow</font>](../graphics/assorted/mircoscopy_workflow.resized.png){height=55%, width=55%}
+  ![<font size="4">workflow</font>](../graphics/assorted/mircoscopy_workflow.resized.png){height=90%, width=90%}
 </div>
 
 ## pollen reference library 4.2.1
@@ -408,7 +408,7 @@ legend(2, .8, legend=c("shape = 2.0 & scale = 1",
     - clean up Cytiza, size selection SPRI  
     - enzymatic fragmentation  
   
-  ![](../graphics/assorted/molecular_metagenomic_workflow.resized.png){height=50%, width=50%}
+  ![](../graphics/assorted/molecular_metagenomic_workflow.resized.png){height=90%, width=90%}
 </div>
 
 ## plant genomic reference dna - 4.4.2
@@ -435,7 +435,6 @@ legend(2, .8, legend=c("shape = 2.0 & scale = 1",
 
 <div class="notes">
 
-
 </div>
 
 
@@ -447,7 +446,7 @@ legend(2, .8, legend=c("shape = 2.0 & scale = 1",
   - Bracken - quantitative identification
   - BLAST followup
   
-  
+  ![Cirsium scariosum](../graphics/pictures/Cirsium.resized.jpg){height=90%, width=90%}
 </div>
 
 ## metabarcoding - 4.5
@@ -463,7 +462,15 @@ legend(2, .8, legend=c("shape = 2.0 & scale = 1",
 
 ## sequence assignment - 4.5.2
 
-stuff
+<div class="columns-2">
+  - initial BLAST query
+  - removal of proxy species from DB, and insertion of local species
+  - filter matches based on flowering phenology
+  - one big function in an order of operations ('algo')
+  
+  ![Reclassification table](../graphics/assorted/reclass_reads.resized.png)
+</div>
+
 
 ## semi-quantitative evidence 4.5.3
 
@@ -690,13 +697,13 @@ What is very exciting about this, is this is basically the best insight that we 
 
 ## semi-quantitative evidence - 5.8
 
-
 <div class="columns-2">
-  - ...
+  - info
   - *some* relationship exists
   - requires further work by someone else
   
-  ![<font size="4">Counted grains</note>](../graphics/plots/CorrelationCountedSequences.png){height=92%, width=92%}
+  ![Counted grains](../graphics/plots/CorrelationCountedSequences.png){height=90%, width=90%}
+
 </div>
 
 <div class="notes">
@@ -704,6 +711,7 @@ What is very exciting about this, is this is basically the best insight that we 
 Alright we did use these data in the last step. SO some relationship exists here, which seems as promising or honestly more promising than exists for the older barcodes. We did not have much to investigate this, but it warrants investigations. 
 
 </div>
+
 
 ## final floral feeding structure - 5.9
 
@@ -729,18 +737,17 @@ I work for the Bureau of Land Management Field office immediately adjacent to th
 
 <div class="columns-2">
 
-- historic vegetation treatment removals  
-  - *Delphinium*, *Astragalus* & *Oxytropis*  
-- altered fire cycle  
-  - *Delphinium*, *Mertensia*  
-- stream channelization / wetland removal  
-  - *Mertensia*  
-  
-  
-- seed species, where missing
-- allow return of historic fire cycle, when appropriate
-- reintroduce beavers, or if unavailable than analogs  
+  - historic vegetation treatment removals  
+    - *Delphinium*, *Astragalus* & *Oxytropis*  
+  - altered fire cycle  
+    - *Delphinium*, *Mertensia*  
+  - stream channelization / wetland removal  
+    - *Mertensia*  
+  - seed species, where missing
+  - allow return of historic fire cycle,
+  - reintroduce beavers  
 
+  ![](../graphics/pictures/Mertensia_fusiformis.resized.jpg)
 </div>
 
 ## 7 | future  
@@ -768,17 +775,19 @@ it seems that future uses of t
 </div>
 
   
-## metabarcoding;  new data sets? - 7.1
+## metabarcoding;  new data sets? - 7.1 {.flexbox .vcenter}
 
-- (more) West Slope
-- artificial mixtures  
-  - leaf tissue  (counted cells)
-    - easier to collect
-  - pollen loads  (counted grains)
-    - more popular
-- Gunnison Sage-Grouse scat
-  - BLM habitat assessment data
-  - opportunistic collections
+<div class="rows-2">
+  - artificial mixtures  
+    - leaf tissue  (counted cells)
+    - pollen loads  (counted grains)
+  - Gunnison Sage-Grouse scat
+    - BLM habitat assessment data
+    - opportunistic collections
+  
+  ![](../graphics/pictures/West_elks.resized.jpg)
+  
+</div>
 
 ## bombus; trends in perennial bunchgrasses - 7.3
 
@@ -795,16 +804,25 @@ promising
 
 ## acknowledgements
 
-two super fantastic technicians for the field seasons I worked during school, made my life SO easy   
-find them funding and recruit them, and then give me a finders fee.    
+<div class="columns-2">
 
-- Dani Yashinowitz B.S. (Yellowstone National Park, botanist & crew lead, Whitebark Pine Surveys (!!!))
-- Hannah Lovell B.S. (Telluride Mountain Resort, and in search of work)
+  - Dani Yashinowitz B.S. SUNY (Yellowstone National Park, botanist & crew lead, Whitebark Pine Surveys (!!!))
+  - Hannah Lovell B.S. DU (Telluride Mountain Resort, and in search of work!!)
+  
+  ![Dani Selfie](../graphics/pictures/DaniYash.resized.jpg)
+
+
+</div>
+
+<div class="notes">
+
+two super fantastic technicians for the field seasons I worked during school, made my life SO easy   
+find them funding and recruit them, and then give me a finders fee.  
+
+</div>
 
 ## acknowledgments
 
-Employment: Yingying Xie, Josh Scholl, Sam Isham, Kelly McMillen, Kay Hajek, Linda Vance, Cassandra Owen, Ken Holsinger
+Employment: Yingying Xie (NU), Josh Scholl (NU), Sam Isham (UM), Kelly McMillen (UM), Kay Hajek (UM), Linda Vance (UM), Cassandra Owen (SCC), Ken Holsinger (BLM)
 
 Project: Nyree Zerega, Pat Herendeen, Hilary Noble, Zoe Diaz-Martinez, Angela McDonnell, Elena Loke, Ian Breckheimer, Ben Legler, Ernie Nelson, Charles (Rick) Williams, D. Knoke, L. Brummer, J. Boyd, C. Davidson, I. Gilman, M. Kirkpatrick, S. McCauley, J. Smith, K. Taylor, & C. Williams. David Giblin, Mare Nazaire, Sarah Burnett, Lauren Price, T.C.H. Cole, Eliot Gardner. 
-
-
