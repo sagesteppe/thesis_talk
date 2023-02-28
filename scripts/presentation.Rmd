@@ -137,7 +137,7 @@ library(tidyverse)
   - Bullet 2
   - Bullet 3
   
-  ![<font size="4">*Solidago spathulata* & *Megachile wheeleri*, by A. Litz</font>](../graphics/pictures/Megachile_Solidago.resized.jpg){height=15%, width=15%}
+  ![<font size="4">*Solidago spathulata* & *Megachile wheeleri*, by A. Litz</font>](../graphics/pictures/Megachile_Solidago.resized.jpg){height=85%, width=85%}
 </div>
 
 
@@ -236,7 +236,7 @@ Do the number of sequence reads reflect the amount of biological material in a s
   - __*back to the sheets!*__
   
   <center>
-  ![<font size="4">FPNW 2^nd^</font>](../graphics/pictures/fpnw2.resized.jpg){height=40%}
+  ![<font size="4">FPNW 2^nd^</font>](../graphics/pictures/fpnw2.resized.jpg){height=25%}
   </center>
 </div>
 
@@ -266,21 +266,33 @@ Do the number of sequence reads reflect the amount of biological material in a s
 ## 4 - methods  
 
 <div class="columns-2">
-  ![](../graphics/plots/flowchart.resized.png)
+  ![](../graphics/plots/flowchart.resized.png){height=70%, width=70%}
+  <br>
+  <br>
   
-  - field work
-  - spatial
-  - temporal  
-  - morphologic  
-  - laboratory  
-  - bioinformatic  
-  - post-classification  
+  - <font color="#FFBF00"> **field work** </font> 
+  - <font color="#FF5F1F"> **spatial** </font>
+  - <font color="#800080"> **temporal** </font>
+  - <font color='#9F2B68'> **morphologic** </font>  
+  - <font color='#f6a192'> **laboratory**  </font>
+  - <font color='#0000FF'> **bioinformatic**  </font>
+  - <font color="#191970"> **post-classification** </font>
 </div>
 
 
-## study system & field work - 4.1
+## study system & field work - 4.1 {data-background=../graphics/pictures/AmericanBasin.jpg size=cover, .flexbox .vcenter}
 
-![](../graphics/plots/siteMaps.png){height=60%, width=60%}
+<font color="black"> 
+
+- **six field sites**
+- **visited weekly**
+- **three transects for floral surveys**
+- **sub-alpine parkland**
+  - **wet meadow**
+  - **dry meadow**
+  - **aspen groves**
+  
+</font>
 
 ## pollen morphological identification 4.2
 
@@ -329,7 +341,7 @@ Do the number of sequence reads reflect the amount of biological material in a s
 ## spatial analysis 4.3.1 {.flexbox .vcenter}
 
 - 2-stage approach  
-  - 1^st^: distance search of records from museums & plot based data (e.g. Forest Servce)
+  - 1^st^: distance search of records from museums & plot based data (e.g. Forest Service)
   - 2^nd^: species distribution modelling
 
 ## plant species, distribution modelling 4.3.1.1.
@@ -370,10 +382,15 @@ Do the number of sequence reads reflect the amount of biological material in a s
 
 ## temporal modelling - 4.3.2
 
-- reduce herbarium records to study domain
-- thin records to analogous ecoregions
-- trim start/end records
-- identify major phenological cues, subset records to similar areas
+<div class="columns-2">
+  - reduce herbarium records to study domain
+  - thin records to analogous ecoregions
+  - trim start/end records
+  - identify major phenological cues, subset records to similar areas
+
+![](../graphics/assorted/Gentiana_Elegans-CHIC-14436.resized.jpg)
+
+</div>
 
 ## temporal modelling subset - 4.3.2.1
 
@@ -484,6 +501,8 @@ stuff
   - 723 floral visitation observations (!)
   - 36 unique plant species involved
   - 64 corbiculae loads from Queens
+  
+  ![](../graphics/plots/siteMaps.resized.png)
   
 </div>
 
