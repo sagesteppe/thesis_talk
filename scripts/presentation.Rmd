@@ -68,8 +68,6 @@ library(tidyverse)
   <font color="black"> 5 </font> | results  
 
   <font color="black"> 6 </font> | future  
-
-  <font color="black"> 7 </font> | conclusions  
   
   <center> 
   ![<font size="4"> *Cercocarpus* </font>](../graphics/pictures/Cercocarpus-Steens.resized.jpg)
@@ -121,7 +119,7 @@ library(tidyverse)
 
 ![](../graphics/pictures/Nelson.jpg)
 
-## plant species in ecology - 1.5
+## plant species in ecology - 1.4
 
 <div class="columns-2">
   - very few persons with formal training in plant taxonomy / systematics
@@ -132,7 +130,7 @@ library(tidyverse)
   ![<font size="4">*Cirsium scariosum*</font>](../graphics/pictures/Cirsium_scariosum.resized.jpg)
 </div>
 
-## insects species in ecology - 1.6
+## insects species in ecology - 1.5
 
 - Macro Invertebrates   
   - stream ecology bio indicators  
@@ -147,7 +145,7 @@ library(tidyverse)
 
 </center>
 
-## from organisms to interactions - 1.8
+## from organisms to interactions - 1.6
 
 <div class="columns-2">
   - often interested in the interactions between organisms
@@ -159,7 +157,7 @@ library(tidyverse)
 </div>
 
 
-## metabarcoding - 1.9
+## metabarcoding - 1.7
 
 <div class="columns-2">
   - Barcoding  
@@ -174,11 +172,11 @@ library(tidyverse)
 Quick definition check, so barcoding is simply the identification of tissue from one organism, e.g. we could try and identify the species of Astragalus from this day of collecting via barcoding; assuming they were present in a database. 'Meta' just means we have a pooled sample to deal with, these are generally samples of soil, pollen, or water. So if we wanted to identify the assembly of organisms which are present on the rhizosphere of a species of Astragalus, we would use metabarcoding. 
 </div>
 
-## barcodes - 1.10
+## barcodes - 1.8
 
 - Kingdom: Animal, 
   - COI (**C**ytochrome c **O**x**I**dase)
-  - *holding it's own in Fungi*
+  - *holding it's own in animals*
 - Kingdoms: Fungi + Plant 
   - ITS (**I**nteral **T**ranscribed **S**pacer)
   - *holding it's own in Fungi*
@@ -186,7 +184,7 @@ Quick definition check, so barcoding is simply the identification of tissue from
   - ITS, rbcL, matK, trnH-psbA
   - *__not__ holding much of anything*
 
-## new barcodes for plants? - 1.11
+## new barcodes for plants? - 1.9
 
 <div class="columns-2">
   - genomics
@@ -203,7 +201,7 @@ Quick definition check, so barcoding is simply the identification of tissue from
 
 </div>
 
-## <font color="black"> questions - 2 </font> {data-background=../graphics/pictures/Angelica_capitellata.jpg size=cover, .flexbox .vcenter}
+## <font color="black"> questions - 2 </font> {data-background=../graphics/pictures/Angelica_capitellata.resized.jpg size=cover, .flexbox .vcenter}
 
 <div class="notes">
 So the questions we sought to determine an answer to all centered around the utility of these probes as barcodes. We pretty much shot the moon here, and skipped a lot of validation testing, which now others are catching up with. We largely utilized kind of two approaches here to answer the questions we had.
@@ -251,7 +249,7 @@ And you can use these as sieves to determine what it is you are likely to be loo
   - usable in all flowering plant clades 
   - first comprehensive genus level phylogeny of flowering plants 
   - shoot the moon; meta genomics first
-  - **requires a referenece sequence database**
+  - **requires a reference sequence database**
 
   ![](../graphics/pictures/Angiosperms353.jpg){height=85%, width=85%}
 </div>
@@ -270,7 +268,7 @@ quantitative is more or less the grail for barcoding, especially metabarcoding. 
 However, many methods have promise for being semi-quantitative. Genomics approaches in particular are very very promising to be more accurate in regards to semi-quantitative estimates than other approaches. So basically we want to create a scatter plot and see what this relationship looks like.
 </div>
 
-## 3 - approaches 
+## <font color="black"> approaches - 3 </font> {data-background=../graphics/pictures/Gothic.jpg size=cover, .flexbox .vcenter}
 
 ## predict what is flowering; *Time & Space* - 3.1
 
@@ -523,7 +521,7 @@ OK so this is not nearly as fancy as the species distribution models. Basically,
 ## plant genomic reference dna - 4.4.2
 
 <div class="rows-2">
-  - 38 species to sequencing
+  - 38 specimens to sequencing
   - 13 species duplicate
   - 24 silica gel dried, 14 herbarium leaf tissue (RM, ID, IDS)
   
@@ -596,7 +594,7 @@ Regress the proportion of all identifiable pollen grains in each sample against 
 ##  <font color="black"> results - 5 </font> {data-background=../graphics/pictures/Meadow.jpg size=cover, .flexbox .vcenter}
 
 
-## field work
+## field work 5.1
 
 <div class="columns-2">
   - 723 floral visitation observations (!)
@@ -611,7 +609,7 @@ Regress the proportion of all identifiable pollen grains in each sample against 
 OK so Jane, had what I consider to be an enormous amount of records of floral visitiations of queens bees. She opportunistically grabbed many corbiculae loads from queens as well. We treat sites as replicates here, but none the less provenance of samples is here. 
 </div>
 
-## sdm candidate species
+## sdm candidate species 5.2
 
 <div class="columns-2">
   - downloaded some 112k records
@@ -625,7 +623,7 @@ OK so Jane, had what I consider to be an enormous amount of records of floral vi
 
 
 
-## sdm evaluations - computational - 5.2
+## sdm evaluations - computational - 5.2.1
 
 ```{r}
 dat <- read.csv('../data/evaluation_table.csv')[,2:3]
@@ -800,6 +798,25 @@ The number of taxa matched in any one corbiculae loads were capped at the top 15
 OK moment of truth with a t-test, right no hiding obscuring the truth here. did all of the dang temporal modelling and the algorithm to assign reads work? Yes, we want from 26% to 44% accuracy, and really very greatly reduced the number of false positives.  
 </div>
 
+## semi-quantitative evidence - 5.6
+
+<div class="columns-2">
+  - Levels of detection
+    - 1 part per 100 ~ 90%+  
+    - 1 part per 1000 ~ 80%+  
+    - parter per 10000 ~ 50%+  
+  - *some* relationship exists
+  - requires further work by someone else
+  
+  ![Counted grains](../graphics/plots/CorrelationCountedSequences.png){height=90%, width=90%}
+
+</div>
+
+<div class="notes">
+Alright we did use these data in the last step. SO some relationship exists here, which seems as promising or honestly more promising than exists for the older barcodes. We did not have much to investigate this, but it warrants investigations. I have a few more things to do here.  
+</div>
+
+
 ## sequence assingment - 5.7 - IV
 
 <div class="columns-2">
@@ -822,23 +839,7 @@ What is very exciting about this, is this is basically the best insight that we 
 
 </div>
 
-## semi-quantitative evidence - 5.8
-
-<div class="columns-2">
-  - info
-  - *some* relationship exists
-  - requires further work by someone else
-  
-  ![Counted grains](../graphics/plots/CorrelationCountedSequences.png){height=90%, width=90%}
-
-</div>
-
-<div class="notes">
-Alright we did use these data in the last step. SO some relationship exists here, which seems as promising or honestly more promising than exists for the older barcodes. We did not have much to investigate this, but it warrants investigations. I have a few more things to do here.  
-</div>
-
-## final floral feeding structure - 5.9 {data-background=../graphics/plots/Expert_Net_DRAFT.png size=cover, .flexbox .vcenter}
-
+## final floral feeding structure - 5.8 {data-background=../graphics/plots/Expert_Net_DRAFT.png size=cover, .flexbox .vcenter}
 
 
 ##  <font color="black"> **Discussion** - 6 </font> {data-background=../graphics/pictures/Marcella.jpg size=cover, .flexbox .vcenter}
@@ -880,7 +881,7 @@ seem pretty cool and useful, you should use them.
 
 ## <font color="black"> future  - 7 </font> {data-background=../graphics/pictures/Pioneers.jpg size=cover, .flexbox .vcenter}
 
-## metabarcoding; computational approaches - 7.2
+## metabarcoding; computational approaches - 7.1
 
 <div class="columns-2">
 
@@ -903,7 +904,7 @@ SO this is like the actual really important bleeding edge of this work. People t
 </div>
 
   
-## metabarcoding;  new data sets? - 7.1 {.flexbox .vcenter}
+## metabarcoding;  new data sets? - 7.2 {.flexbox .vcenter}
 
 <div class="rows-2">
   - artificial mixtures  
@@ -925,8 +926,6 @@ SO this is like the actual really important bleeding edge of this work. People t
 - use existing data to model reductions in grass cover
 - view historic grazing renewals to monitor (loosely) reduction in grass diversity
 - forked from Ken Holsinger
-
-## conclusions - 8 {data-background=../graphics/pictures/Marcella.jpg size=cover, .flexbox .vcenter}
 
 promising
 
